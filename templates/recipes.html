@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Recipes</h2>
+    <ul>
+        {% for recipe in recipes %}
+            <li>{{ recipe }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+
